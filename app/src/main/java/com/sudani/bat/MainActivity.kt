@@ -14,15 +14,13 @@ import com.sudani.bat.data.repository.SudaniRepository
 import com.sudani.bat.ui.screens.HomeScreen
 import com.sudani.bat.ui.theme.SudaniBatTheme
 import com.sudani.bat.ui.viewmodel.MainViewModel
-import okhttp3.OkHttpClient
 import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonFactory
+import retrofit2.converter.gson.GsonConverterFactory
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         
-        // Manual DI for simplicity in this example
         val db = Room.databaseBuilder(
             applicationContext,
             AppDatabase::class.java, "sudani-bat-db"
