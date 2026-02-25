@@ -1,0 +1,6 @@
+<resources>
+    <style name="Theme.SudaniBat" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/primary_green</item>
+    </style>
+    <color name="primary_green">#4CAF50</color>
+</resources>
